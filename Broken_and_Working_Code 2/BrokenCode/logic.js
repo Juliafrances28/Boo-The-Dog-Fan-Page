@@ -1,7 +1,7 @@
 // When the factButton is clicked...
 $("#factButton").on("click", function () {
   // We generate a random number between 0 & 6 (the number of facts in the booFactArray)
-  var number = Math.random() * booFactArray.length;
+  var number = Math.floor(Math.random() * booFactArray.length);
   //We display the fact from the booFactsArray that is in the random position we just generated.
   $("#factText").text(booFactArray[number]);
 });
